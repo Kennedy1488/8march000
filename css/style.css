@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Golos Text', sans-serif;
+}
+
+body {
+    background-color: pink;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.section {
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.mein {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.left {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.block:hover .left {
+    animation: left 2s linear 1 normal forwards;
+}
+
+.left8 {
+    width: 100%;
+
+}
+
+.right {
+    width: 150px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+
+.block:hover .right {
+    animation: right 2s linear 1 normal forwards;
+}
+
+.right8 {
+    width: 100%;
+}
+
+@keyframes left {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    100% {
+        left: -150px;
+    }
+}
+
+@keyframes right {
+    0% {
+        right: 0;
+        top: 0;
+    }
+
+    100% {
+        right: -150px;
+    }
+}
